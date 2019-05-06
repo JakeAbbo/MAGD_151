@@ -1,0 +1,18 @@
+PImage img;
+float y;
+float x;
+void setup(){
+ size(800,800);
+ background(176,224,230);
+ 
+  y = height * 0.5;
+}
+
+void draw(){
+  img=loadImage("bubbles2.png"); //im having ahard time making it the bubbles go back up"
+ background(176,224,230);
+ image(img,100,y,80,80);
+ image(img,600,x,80,80);
+ y+=1.5;
+ x+=2;
+}
