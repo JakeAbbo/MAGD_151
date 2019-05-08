@@ -1,2 +1,2 @@
 ##Sharks and Minos!
-The game objective is to eat as many fish as the shark within the time limit as you can. You also will need to satisfy the shark's hunger or it's game over!
+The game objective is to escape the mouth of all the hungry sharks! Once the timer runs out, you've won! If you're eaten, it's game over! Watch out.
