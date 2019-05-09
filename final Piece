@@ -1,0 +1,53 @@
+// This is the code for the final project! If Either of us are working on it MAKE NOTE OF IT. So that we know what's up.
+//Aalso after any edits be sure to delete the current code and replace it with the new.
+//Final Code (Progress):
+//JAKE IS CURRENTLY WORKING ON THE FINAL CODE
+    
+PImage img;//bubbles
+PImage sha;//shark
+PImage min;//minos
+float y;//bubbles moving
+float x;
+float s;//Sharks moving
+float h; 
+float a; 
+float r;
+float k;
+PFont font; //creating a timer
+String time = "010";
+int t;
+int interval = 10;
+
+
+void setup(){
+ size(800,800);
+ background(176,224,230);
+ font = createFont("Arial", 50);//font for timer
+  y = height * 0.5;
+}
+
+void draw(){
+  img=loadImage("bubbles2.png"); //bubbles in the background
+ background(176,224,230);
+ image(img,100,y,80,100);
+ image(img,600,x,80,100);
+ y+=1.5;
+ x+=2;
+ min=loadImage("MinoGood.png");//mino image1
+ image(min,mouseX, 600);
+ s+=3;
+ sha=loadImage("shark.png");//Shark image on the mouse x axis
+ image(sha,200,s);
+ fill(0);
+ text("Timer:",710,50);
+  t = interval-int(millis()/1000); //count down timer
+    time = nf(t , 3);
+   
+    if(t == 0){
+      text("YOU'VE MADE IT!",350,400); //will display this at the end of the game.
+    interval+=10;
+    noLoop();}
+
+   text(time, 750, 50);
+ 
+}
